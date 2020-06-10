@@ -3,6 +3,7 @@ import './App.css';
 import './Components/Estilos.css';
 import NavBar from './Components/NavBar';
 import Informacion from './Components/Informacion';
+import Footer from './Components/Footer';
 import {Container} from '@material-ui/core';
 import Page from './Components/Page';
 import Formulario from './Components/Formulario';
@@ -20,6 +21,10 @@ const config = {
           <NavBar systemName={config.systemName}/>
         </header>
 
+      <container>
+      <img src={'Pictures/inicio.png'} className={'Imagen_Inicio'}/>
+      </container>
+
       <Container maxWidth={'xl'}>
         <nav className="Nav">
           <Page/>
@@ -34,6 +39,9 @@ const config = {
         <Formulario/>
       </Container>
 
+      <Container maxWidth={'xl'}>
+        <Footer/>
+      </Container>
     </div>
   );
 };
